@@ -1,0 +1,33 @@
+{
+  "name": "faanginterview_bookstore",
+  "version": "1.0.0",
+  "description": "Bookstore App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qmnguyenw/faanginterview_bookstore.git"
+  },
+  "author": "QuangNguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qmnguyenw/faanginterview_bookstore/issues"
+  },
+  "homepage": "https://github.com/qmnguyenw/faanginterview_bookstore#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.2",
+    "nodemon": "^2.0.13"
+  }
+}
